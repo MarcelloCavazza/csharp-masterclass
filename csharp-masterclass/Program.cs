@@ -11,15 +11,26 @@ namespace csharp_masterclass
         
         static void Main(string[] args)
         {
-            Console.ForegroundColor = ConsoleColor.DarkBlue;
-            Console.BackgroundColor = ConsoleColor.Magenta;
-            Console.Write("Enter a value");
-            string rlInput = Console.ReadLine();
-            Console.WriteLine("rlInput " + rlInput);
+            int num = 999;
+            long bignum = num;
 
-            Console.Write("Enter a value");
-            int asciiInput = Console.Read();
-            Console.WriteLine("asciiInput " + asciiInput);
+            float myfloat = 13.37f;
+            double myNewDouble = myfloat;
+
+            Console.WriteLine(bignum);
+            Console.WriteLine(myNewDouble);
+
+            Console.WriteLine("myfloat"+ myfloat.ToString());
+            Console.WriteLine(myNewDouble);
+
+
+            //explicit conversion
+            double myDouble = 13.37;
+            int myInt;
+
+            myInt = (int)myDouble;
+            Console.WriteLine(myInt);
+
             Console.ReadKey();
         }
     }

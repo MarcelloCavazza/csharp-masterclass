@@ -11,7 +11,8 @@ namespace csharp_masterclass
         
         static void Main(string[] args)
         {
-
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
+            Console.BackgroundColor = ConsoleColor.Magenta;
             Console.Write("Enter a value");
             string rlInput = Console.ReadLine();
             Console.WriteLine("rlInput " + rlInput);

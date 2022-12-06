@@ -8,19 +8,18 @@ namespace csharp_masterclass
 {
     internal class Program
     {
-        static int age = 18;
+        
         static void Main(string[] args)
         {
-            if(age < 18)
-            {
-                Console.WriteLine("He/she is not an adult!");
-                Console.ReadLine();
-            }
-            else
-            {
-                Console.WriteLine("He/she is an adult!");
-                Console.ReadLine();
-            }
+
+            Console.Write("Enter a value");
+            string rlInput = Console.ReadLine();
+            Console.WriteLine("rlInput " + rlInput);
+
+            Console.Write("Enter a value");
+            int asciiInput = Console.Read();
+            Console.WriteLine("asciiInput " + asciiInput);
+            Console.ReadKey();
         }
     }
 }

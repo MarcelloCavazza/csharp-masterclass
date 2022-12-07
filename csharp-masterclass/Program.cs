@@ -11,25 +11,11 @@ namespace csharp_masterclass
         
         static void Main(string[] args)
         {
-            int num = 999;
-            long bignum = num;
 
-            float myfloat = 13.37f;
-            double myNewDouble = myfloat;
+            int age = 18;
+            string name = "Marcello";
 
-            Console.WriteLine(bignum);
-            Console.WriteLine(myNewDouble);
-
-            Console.WriteLine("myfloat"+ myfloat.ToString());
-            Console.WriteLine(myNewDouble);
-
-
-            //explicit conversion
-            double myDouble = 13.37;
-            int myInt;
-
-            myInt = (int)myDouble;
-            Console.WriteLine(myInt);
+            Console.WriteLine($"My name is {name} and I'm {age} years old.");
 
             Console.ReadKey();
         }

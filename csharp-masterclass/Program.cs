@@ -13,13 +13,13 @@ namespace csharp_masterclass
         static void Main(string[] args)
         {
 
-            int age = 18;
-            string name = "Marcello";
-            string finalString = $"       My name is {name} I'm {age} years old.";
-            Console.WriteLine(finalString.Trim().Substring(2,5));
-            Console.WriteLine(finalString.ToUpper());
-            Console.WriteLine(finalString.ToLower());
-            Console.WriteLine(finalString.IndexOf("Marcello"));
+            string userName;
+            Console.WriteLine("Please enter your name and press enter");
+            userName = Console.ReadLine();
+            Console.WriteLine("UpperCase"+userName.ToUpper());
+            Console.WriteLine("Lowercase" + userName.ToLower());
+            Console.WriteLine("Trim" + userName.Trim());
+            Console.WriteLine("Substring" + userName.Substring(2));
 
             Console.ReadKey();
         }

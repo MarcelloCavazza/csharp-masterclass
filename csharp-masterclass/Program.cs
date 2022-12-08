@@ -13,27 +13,18 @@ namespace csharp_masterclass
         static void Main(string[] args)
         {
 
-            //string word;
-            //char charToSearch;
-            //Console.WriteLine("Please enter a word:");
-            //word = Console.ReadLine();
-            //Console.WriteLine("Please enter a character to search:");
-            //charToSearch = char.Parse(Console.ReadLine());
-            //Console.WriteLine("IndexOf: " + word.IndexOf(charToSearch));
+            byte bVar = 255;
+            sbyte sVar = -128;
+            int iVar = 2147483647;
+            short stVar = 32767;
+            float fVar = 3.402823e38f;
+            double dVar = 130823.232;
+            char cVar = 'c';
+            bool blVar = false;
+            decimal dlVar = 1028m;
 
-            string firstName, secondName;
-            Console.WriteLine("Put your first name");
-            firstName = Console.ReadLine();
-            Console.WriteLine("Put your last name");
-            secondName = Console.ReadLine();
-            if(firstName.Length > 0 && secondName.Length > 0) {
-                string fullName = $"{firstName} {secondName}";
-                Console.WriteLine(fullName);
-            }
-            else
-            {
-                Console.WriteLine("Any name can be empty!");
-            }
+            string phrase1 = "I control text", phrase2 = "23232";
+            int phrase2AsInt = int.Parse(phrase2);
 
             Console.ReadKey();
         }

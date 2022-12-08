@@ -13,13 +13,27 @@ namespace csharp_masterclass
         static void Main(string[] args)
         {
 
-            string userName;
-            Console.WriteLine("Please enter your name and press enter");
-            userName = Console.ReadLine();
-            Console.WriteLine("UpperCase"+userName.ToUpper());
-            Console.WriteLine("Lowercase" + userName.ToLower());
-            Console.WriteLine("Trim" + userName.Trim());
-            Console.WriteLine("Substring" + userName.Substring(2));
+            //string word;
+            //char charToSearch;
+            //Console.WriteLine("Please enter a word:");
+            //word = Console.ReadLine();
+            //Console.WriteLine("Please enter a character to search:");
+            //charToSearch = char.Parse(Console.ReadLine());
+            //Console.WriteLine("IndexOf: " + word.IndexOf(charToSearch));
+
+            string firstName, secondName;
+            Console.WriteLine("Put your first name");
+            firstName = Console.ReadLine();
+            Console.WriteLine("Put your last name");
+            secondName = Console.ReadLine();
+            if(firstName.Length > 0 && secondName.Length > 0) {
+                string fullName = $"{firstName} {secondName}";
+                Console.WriteLine(fullName);
+            }
+            else
+            {
+                Console.WriteLine("Any name can be empty!");
+            }
 
             Console.ReadKey();
         }

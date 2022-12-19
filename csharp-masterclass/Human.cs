@@ -14,6 +14,11 @@ namespace csharp_masterclass
         private string firstName;
         private string lastName;
 
+        public Human ()
+        {
+            Console.WriteLine("Created constructor");
+        }
+
         public Human(string firstName, string lastName, int age) { 
             this.firstName = firstName;
             this.lastName = lastName;

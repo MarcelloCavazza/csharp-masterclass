@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -57,6 +58,12 @@ namespace csharp_masterclass
             Console.WriteLine(
                 $"Length is {length}, height is {height}, width is {width} so volume is {Volume}"
             );
+        }
+
+        ~Box()
+        {
+            Console.WriteLine("Hello");
+            Debug.Write("Hello");
         }
     }
 }

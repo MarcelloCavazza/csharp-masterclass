@@ -9,14 +9,12 @@ namespace csharp_masterclass
 {
     internal class Program
     {
-        
+
         static void Main(string[] args)
         {
-
-            const string neverChanges = "HIII";
-
-
-            Console.ReadKey();
+            Human marcello = new Human("Marcello", "Cavazza", 18);
+            marcello.HelloMyWorld();
+            Console.ReadLine();
         }
     }
 }

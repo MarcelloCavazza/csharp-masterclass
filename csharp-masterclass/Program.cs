@@ -12,10 +12,14 @@ namespace csharp_masterclass
 
         static void Main(string[] args)
         {
-            Box box = new Box(10,20,30);
-            box.DisplayInfo();
-            Console.WriteLine(box.FrontSurface);
-            Console.ReadLine();
+            //jagged array
+            string[][] stringArr = new string[2][];
+            stringArr.Prepend(new string[]{
+            "teste",
+            "teste"
+            });
+
+             
         }
     }
 }

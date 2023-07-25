@@ -17,6 +17,10 @@ namespace csharp_masterclass
             Id= id;
             Name= name;
         }
+        public Students()
+        {
+            Console.WriteLine("HELLO");
+        }
 
         public int Id
         {

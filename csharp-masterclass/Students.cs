@@ -17,10 +17,6 @@ namespace csharp_masterclass
             Id= id;
             Name= name;
         }
-        public Students()
-        {
-            Console.WriteLine("HELLO");
-        }
 
         public int Id
         {
@@ -35,8 +31,8 @@ namespace csharp_masterclass
 
         ~Students()
         {
-            Console.WriteLine("Hello");
-            Debug.Write("Hello");
+            Console.WriteLine("Closing Class");
+            Debug.Write("Closing Class");
         }
     }
 }

@@ -13,21 +13,17 @@ namespace csharp_masterclass
 
         static void Main(string[] args)
         {
+            Hashtable ht = new Hashtable();
 
-            //ConsoleWriteLine(1, 2, 3, "a", "b");
-
-            //Students students = new Students(12, "Pedro");
-
-            Console.WriteLine(MinV2(100023, 99, 2222,  900));
+            Students newStudents = new Students(1, "Marcello");
+            
+            Console.WriteLine(newStudents.Name);
 
 
-            //int[] number = { 1, 2, 3, 4, 5, 6 };
+            ht.Add(newStudents.Id, newStudents);
 
-            //foreach (int i in number)
-            //{
-            //    ConsoleWriteLine(i);
-            //}
-
+            Console.WriteLine(((Students)ht[1]).Id);
+            Console.WriteLine(((Students)ht[1]).Name);
 
             Console.ReadLine();
         }

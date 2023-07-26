@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace csharp_masterclass
 {
-    internal class Students
+    internal class Student
     {
         private int id;
         private string name;
 
-        public Students(int id, string name)
+        public Student(int id, string name)
         {
             Id= id;
             Name= name;
@@ -29,7 +29,7 @@ namespace csharp_masterclass
             set { this.name = value; }
         }
 
-        ~Students()
+        ~Student()
         {
             Console.WriteLine("Closing Class");
             Debug.Write("Closing Class");

@@ -10,17 +10,17 @@ namespace csharp_masterclass
     internal class HashTableChallenge
     {
         public HashTableChallenge() {
-            Students[] students = { 
-                new Students(1, "Marcello"),
-                new Students(2, "Pedro"),
-                new Students(3, "Lucas"),
-                new Students(4, "Paulo"),
-                new Students(1, "Paulo"),
+            Student[] students = { 
+                new Student(1, "Marcello"),
+                new Student(2, "Pedro"),
+                new Student(3, "Lucas"),
+                new Student(4, "Paulo"),
+                new Student(1, "Paulo"),
             };
 
             Hashtable SchoolHashTable = new Hashtable();
 
-            foreach (Students student in students)
+            foreach (Student student in students)
             {
                 if (SchoolHashTable.ContainsKey(student.Id))
                 {
@@ -35,7 +35,7 @@ namespace csharp_masterclass
             }
 
 
-            foreach(Students student in SchoolHashTable.Values)
+            foreach(Student student in SchoolHashTable.Values)
             {
                 Console.WriteLine(student.Id);
                 Console.WriteLine(student.Name);

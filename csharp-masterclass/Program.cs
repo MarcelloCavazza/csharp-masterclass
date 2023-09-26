@@ -23,38 +23,48 @@ namespace csharp_masterclass
             //    new Student(3, "Lucas"),
             //};
 
-            Student[] students = {
-                new Student(6565, "Marcello"),
-                new Student(784, "Pedro"),
-                new Student(24, "Lucas"),
-            };
+            //Student[] students = {
+            //    new Student(6565, "Marcello"),
+            //    new Student(784, "Pedro"),
+            //    new Student(24, "Lucas"),
+            //};
 
-            Dictionary<int, Student> studentsDictionary = new Dictionary<int, Student>();
+            //Dictionary<int, Student> studentsDictionary = new Dictionary<int, Student>();
 
-            foreach(Student student in students)
-            {
-                studentsDictionary.Add(student.Id, student);
-            }
+            //foreach(Student student in students)
+            //{
+            //    studentsDictionary.Add(student.Id, student);
+            //}
 
 
-            for (int i = 0; i < studentsDictionary.Count; i++)
-            {
-                KeyValuePair<int, Student> keyValuePair = studentsDictionary.ElementAt(i);
+            //for (int i = 0; i < studentsDictionary.Count; i++)
+            //{
+            //    KeyValuePair<int, Student> keyValuePair = studentsDictionary.ElementAt(i);
 
-                Console.WriteLine(keyValuePair.Key);
-                Console.WriteLine(keyValuePair.Value.Id);
-                Console.WriteLine(keyValuePair.Value.Name);
-            }
+            //    Console.WriteLine(keyValuePair.Key);
+            //    Console.WriteLine(keyValuePair.Value.Id);
+            //    Console.WriteLine(keyValuePair.Value.Name);
+            //}
 
-            Student result;
+            //Student result;
 
-            
 
-            if(studentsDictionary.TryGetValue(784, out result))
-            {
-                Console.WriteLine(((Student)result).Name);
-            }
 
+            //if(studentsDictionary.TryGetValue(784, out result))
+            //{
+            //    Console.WriteLine(((Student)result).Name);
+            //}
+
+            Audi a = new Audi(10, 7575, "Sport");
+
+            a.ShowDetails();
+            a.Repair();
+
+
+            Car b = new Audi(10, 7575, "Sport");
+
+            b.ShowDetails();
+            b.Repair();
 
             Console.ReadLine();
         }

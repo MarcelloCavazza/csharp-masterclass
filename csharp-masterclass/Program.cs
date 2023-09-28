@@ -55,16 +55,18 @@ namespace csharp_masterclass
             //    Console.WriteLine(((Student)result).Name);
             //}
 
-            Audi a = new Audi(10, 7575, "Sport");
+            //Audi a = new Audi(10, 7575, "Sport");
 
-            a.ShowDetails();
-            a.Repair();
+            //a.ShowDetails();
+            //a.Repair();
 
 
-            Car b = new Audi(10, 7575, "Sport");
+            //Car b = new Audi(10, 7575, "Sport");
 
-            b.ShowDetails();
-            b.Repair();
+            //b.ShowDetails();
+            //b.Repair();
+
+
 
             Console.ReadLine();
         }
